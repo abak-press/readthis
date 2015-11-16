@@ -4,6 +4,8 @@ require 'readthis/passthrough'
 require 'redis'
 require 'connection_pool'
 
+require 'backports/2.1.0/enumerable'
+
 module Readthis
   class Cache
     attr_reader :entity, :notifications, :options, :pool
